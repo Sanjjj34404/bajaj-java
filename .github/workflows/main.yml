@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4   # updated
 
       - name: Set up Java 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4   # updated
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -21,7 +21,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Upload built JAR
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4   # updated
         with:
           name: bfh-java-qualifier-jar
           path: target/*.jar
