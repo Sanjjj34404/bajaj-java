@@ -1,0 +1,8 @@
+app:
+  name: "Shiva Sanjay V B"      
+  regNo: "22BCE1147"     
+  email: "shivasanjay.vb2022@vitstudent.ac.in"  
+  submit: true           
+logging:
+  level:
+    root: INFO
